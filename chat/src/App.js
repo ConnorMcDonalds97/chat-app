@@ -1,20 +1,19 @@
 import './App.css';
+import { Sidebar } from "./containers/Sidebar"
+import { MessagesList } from "./containers/MessagesList"
+import { AddMessage } from "./containers/AddMessage"
+
+
 
 function App() {
   return (
     <div className="container">
 
-      <div className="userList">
-        <h1>User List</h1>
-      </div>
+      <Sidebar/>
 
       <div className="chatBoxes">
-        <div className="chat">
-          <h1>Chat</h1>
-        </div>
-        <div className="inputBox">
-          <p>Enter message here</p>
-        </div>
+        <MessagesList/>
+        <AddMessage/>
       </div>
 
     </div>

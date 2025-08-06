@@ -1,10 +1,9 @@
 import * as types from '../constants/actionTypes'
 
 const messages = (state = [], action) => {    // pass in the current state and the action
-    console.log('messages reducer state:', state, 'action:', action); // <-- Add this line
 
     switch (action.type) {
-        case types.MESSAGE_RECEIVED:
+        case types.MESSAGE_RECEIVED: //  adds a new message to the array when a message is received
             return state.concat([
                 {
                     message: action.message,

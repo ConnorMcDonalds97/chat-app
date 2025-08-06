@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import createStore from 'react-redux'
+import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import chat from '/reducers'
+import chat from './reducers'
+import { addUser } from './actions'
 
 const store = createStore(chat)
+
+store.dispatch(addUser('Me'))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

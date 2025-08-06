@@ -1,29 +1,27 @@
-// Implements the text field
-
 import React from "react";
-import PropTypes from 'prop-types'
+import { useDispatch } from "react-redux";
+import { addMessage } from "../actions";
 
-const AddMessage = (props) => {
-    let input
+const AddMessage = () => {
+    const dispatch = useDispatch();
+    let input;
 
     return (
         <section id="new-message">
-            <input  
+            <input
                 onKeyPress={(e) => {
-                    if (e.key ==='Enter'){
-                        props.dispatch(input.value, 'Me')
-                        input.value = ''
+                    if (e.key === 'Enter' && input.value.trim() !== '') {
+                        dispatch(addMessage(input.value, 'Me'));
+                        input.value = '';
                     }
                 }}
-                type = 'text'
-                ref{...(node) => {
-                    input = node
+                type='text'
+                ref={(node) => {
+                    input = node;
                 }}
-            ></input>
+            />
         </section>
-    )
-}
+    );
+};
 
-AddMessage.PropTypes = {
-    dispatch: PropTypes.func.isRequired
-}
+export default AddMessage;

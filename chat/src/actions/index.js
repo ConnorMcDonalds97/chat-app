@@ -3,7 +3,7 @@ import * as types from '../constants/actionTypes'
 // These will be the actions for our app
 
 let nextMessageID = 0
-const nextUserID = 0
+let nextUserID = 0
 
 export const addMessage = (message, author) => ({ // messages from you, the user
     type: types.ADD_MESSAGE,
@@ -19,7 +19,7 @@ export const addUser = name => ({
 })
 
 export const messageReceived = (message,author) => ({ // messages from the other users in the chat
-    type: types.MESSAGE_RECIEVED,
+    type: types.MESSAGE_RECEIVED,
     id: nextMessageID++,
     message,
     author

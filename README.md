@@ -12,7 +12,7 @@ I'm currently working to improve this application to further develop my skills
 #### What I'm currently working on:  
 **Making it look pretty (UX/UI)**
 
-<img src= "https://github.com/ConnorMcDonalds97/chat-app/blob/main/Assets/Demonstration.gif"  width="638" height="475"/>
+<img src= "https://github.com/ConnorMcDonalds97/chat-app/blob/main/Assets/Demonstration.gif"  width="438" height="475"/>
 
 
 

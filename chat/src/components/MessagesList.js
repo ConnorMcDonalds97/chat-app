@@ -8,7 +8,6 @@ import Message from './Message'
 const MessagesList = ({ messages, username }) => ( 
     <section id='messages-list'>
         <ul>
-            // iterate over the messages
             {messages.map(message => ( 
                 // render a message for each message prop in the array
                 <Message

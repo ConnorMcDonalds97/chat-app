@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Message = ({ message, author, username }) => ( // renders the messages
     <li>
-        <i>{author === username ? "me" : author}</i>: {message} // put the username if it isn't "me"
+        <i>{author === username ? "me" : author}</i>: {message}
     </li>
 );
 

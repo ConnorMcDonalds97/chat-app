@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 
 const Sidebar = ({ users }) => (
   // aside for secondary content
-  <aside id="sidebar" className="sidebar">  // aside
-    // unordered list
+  <aside id="sidebar" className="sidebar">
     <ul>
       {users.map(user => ( // iterate over the user array prop
         <li key={user.id}> {user.name} </li>

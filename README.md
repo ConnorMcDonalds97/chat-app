@@ -15,6 +15,12 @@ I'm currently working to improve this application to further develop my skills
 <img src= "https://github.com/ConnorMcDonalds97/chat-app/blob/main/Assets/Demonstration.gif"  width="838" height="475"/>
 
 
+**How to run the app**  
+### Ordered
+1. On one git bash terminal, cd into the chat directory, and run 'npm start'
+2. On another terminal, cd into the server directory, and run 'node app.js'
+3. Refresh the page that pops up and it should work.
+
 
 [Credit to freeCodeCamp's tutorial](https://www.youtube.com/watch?v=x_fHXt9V3zQ)
 

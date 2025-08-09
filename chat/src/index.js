@@ -8,8 +8,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import reducers from './reducers'
-import setupSocket from './sockets'
-import handleNewMessage from './sagas'
+
 
 const sagaMiddleware = createSagaMiddleware()
 

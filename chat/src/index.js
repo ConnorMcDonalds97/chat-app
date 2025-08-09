@@ -10,7 +10,6 @@ import reportWebVitals from './reportWebVitals';
 import reducers from './reducers'
 import setupSocket from './sockets'
 import handleNewMessage from './sagas'
-import username from './utils/name'
 
 const sagaMiddleware = createSagaMiddleware()
 
@@ -19,16 +18,14 @@ const store = createStore(
   applyMiddleware(sagaMiddleware)
 )
 
-const socket = setupSocket(store.dispatch, username)
 
-sagaMiddleware.run(handleNewMessage, {socket,username})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <App />
+    <App sagaMiddleWare={sagaMiddleware} />
     </Provider>
   </React.StrictMode>,
 );

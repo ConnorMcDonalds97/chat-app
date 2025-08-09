@@ -18,6 +18,7 @@ body {
 }
 #new-message {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 100;
     position: fixed;
     bottom: 0;
     width: 100%;

@@ -6,6 +6,10 @@
 body {
     font-family: "Press Start 2P";
 }
+p {
+    line-height:2px;
+} 
+
 #container {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -30,11 +34,13 @@ body {
     padding: 5px 0 0 5px;
 }
 #sidebar {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     grid-area: sidebar;
     padding: 5px 0 0 5px;
     border-right: 1px solid #3f3f3f;
     height: 100%;
+    font-size: large;
+    font-weight: bold;
 }
 
 /* new */
@@ -51,4 +57,32 @@ body {
     margin: 0;
     height: 50px;
     padding: 5px;
+}
+
+#messages-list li {
+  list-style: none;
+}
+
+/* Message Styling */
+.message-author {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.my-message {
+    border-radius: 4px;
+    padding: 4px;
+    margin: 0 4px 4px 0;
+    background: #03A2E9;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.other-message {
+    border-radius: 4px;
+    padding: 4px;
+    margin: 0 4px 4px 0;
+    background: #E5E5EA;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

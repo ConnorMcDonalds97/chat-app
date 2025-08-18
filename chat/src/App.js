@@ -5,7 +5,6 @@ import { MessagesList } from './containers/MessagesList'
 import { AddMessage } from './containers/AddMessage'
 import setupSocket from './sockets'
 import { useDispatch } from 'react-redux'
-import createSagaMiddleware from 'redux-saga'
 import handleNewMessage from './sagas'
 
 const App = ({sagaMiddleWare}) => {
@@ -19,11 +18,10 @@ const App = ({sagaMiddleWare}) => {
     if (username) {
       socketRef.current = setupSocket(dispatch, username);
       if (!sagaTaskRef.current) {
-        sagaTaskRef.current = sagaMiddleWare.run(handleNewMessage , {
+        sagaTaskRef.current = sagaMiddleWare.run(handleNewMessage,{
           socket: socketRef.current,
           username
         })
-
       }
     }
   }, [username, dispatch, sagaMiddleWare]);

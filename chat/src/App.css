@@ -73,6 +73,7 @@ p {
     border-radius: 4px;
     padding: 4px;
     margin: 0 4px 4px 0;
+    width: fit-content;
     background: #03A2E9;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -82,6 +83,7 @@ p {
     border-radius: 4px;
     padding: 4px;
     margin: 0 4px 4px 0;
+    width: fit-content;
     background: #E5E5EA;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

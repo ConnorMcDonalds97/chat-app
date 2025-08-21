@@ -31,6 +31,7 @@ const App = ({sagaMiddleWare}) => {
       <div className="username-modal">
         <h2>Enter your username</h2>
         <input 
+          className='username-input'
           type='text'
           value={input}
           onChange={e => setInput(e.target.value)}

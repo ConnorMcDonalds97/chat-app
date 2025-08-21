@@ -16,6 +16,7 @@ const AddMessage = () => {
                     }
                 }}
                 type='text'
+                placeholder="Enter Message Here"
                 ref={(node) => {
                     input = node;
                 }}

@@ -47,6 +47,9 @@ p {
     height: 100%;
     font-size: large;
     font-weight: bold;
+
+    background-color: #2c2c2c;
+    color: white
 }
 
 /* new */
@@ -58,11 +61,21 @@ p {
 
 #new-message input {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%;
+    width: 100vh;
     height: 100%;
     margin: 0;
     height: 50px;
     padding: 5px;
+
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+#new-message input:focus {
+    border: 3px solid #03A2E9; /* Example: blue border on focus */
 }
 
 #messages-list li {

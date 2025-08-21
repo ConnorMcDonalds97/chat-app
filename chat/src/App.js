@@ -29,7 +29,7 @@ const App = ({sagaMiddleWare}) => {
   if (!username) {
     return (
       <div className="username-modal">
-        <h2>Enter your username</h2>
+        <h1>enter your username</h1>
         <input 
           className='username-input'
           type='text'
@@ -43,6 +43,7 @@ const App = ({sagaMiddleWare}) => {
         placeholder='your name'
         />
         <button 
+          className='join-chat-button'
           onClick={() => {
             if (input.trim()) setUsername(input.trim())
           }}

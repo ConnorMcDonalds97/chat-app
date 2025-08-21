@@ -4,10 +4,16 @@
   margin: 0;
 }
 
+body{
+    justify-content: center;
+    align-items: center;
+}
+
 p {
     line-height:2px;
 } 
 
+/* main */
 #container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -53,7 +59,7 @@ p {
     color: white
 }
 
-/* new */
+/* new message */
 
 #new-message {
     padding: 0px;
@@ -109,6 +115,8 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* username screen */
+
 .username-modal{
     justify-content: center;
     align-items: center;
@@ -147,7 +155,3 @@ p {
 
 }
 
-body{
-    justify-content: center;
-    align-items: center;
-}
